@@ -1,0 +1,40 @@
+.col-1{
+	position: fixed;
+	left: 0;
+	z-index: 10;
+}
+.col-11{
+	left: 8.333333%;
+}
+body{
+	overflow: auto;
+}
+.hero{
+	background-image: url('../graphics/hero.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;	
+}
+.hero::after{
+  display: block;
+  position: relative;
+  background-color: rgba(0,0,0,0.5);
+/*  margin-top: -150px;*/
+  height: 100vh;
+  width: 100%;
+  content: '';
+}
+.hero-content{
+	position: absolute;
+	top: calc((100vh - 80px) / 2.5);
+	width: 100%;
+	font-family: "Lemon Milk";
+	color: white;
+	width: fit-content;
+	left: calc((100% - 800px) / 2);
+	text-align: center;
+}
+.hero-content > *{
+	font-family: inherit;
+}
